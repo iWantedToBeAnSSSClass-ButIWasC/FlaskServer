@@ -48,4 +48,6 @@ def get_moodinfo():
 
 
 # 출력 테스트
+
+#commit test
 print(get_moodinfo())
