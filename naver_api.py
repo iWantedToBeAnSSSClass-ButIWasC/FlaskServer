@@ -1,14 +1,15 @@
 import requests
 import api_key
 
-def get_faceinfo_from_api():
+def get_faceinfo_from_api(image):
 
     client_id = api_key.client_id
     client_secret = api_key.client_secret
     url = "https://openapi.naver.com/v1/vision/face" # 얼굴감지
 
     # TODO: 이 부분의 image를 앱에서 넘겨받은 image로 변경 
-    files = {'image': open('멋진남자 윤태섭.jpg', 'rb')}
+    files = image
+    #이전 코드files = {'image': open('멋진남자 윤태섭.jpg', 'rb')}
 
     headers = {'X-Naver-Client-Id': client_id, 'X-Naver-Client-Secret': client_secret }
     response = requests.post(url,  files=files, headers=headers)
