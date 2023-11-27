@@ -5,8 +5,12 @@ import json
 import random
 import naver_api
 import teachable_machine
+import json_data
 
 app = Flask(__name__)
+json_data = json_data.json_data
+
+print(json_data)
 
 @app.route('/')
 def hello():
@@ -32,6 +36,7 @@ def get_image():
 @app.route('/receive_info', methods=['POST'])
 def receive_info():
     try:
+        print("000")
         # 이미지를 포함한 요청에서 이미지 데이터를 받아오기
         uploaded_image = request.files['image'].read()
         print("111\n")
@@ -51,68 +56,6 @@ def receive_info():
         # perfume = "선택된 향수 정보"
 
         ###################################### 향수 선별을 위한 알고리즘
-
-        # 향수 정보가 저장된 json 파일 위치
-        json_data = {
-            "perfume1": {
-                "age": 25,
-                "gender": "Male",
-                "emotion": "fire",
-                "mood": "cold",
-                "url" : "asdf123"
-                        },
-
-            "perfume11": {
-                "age": 25,
-                "gender": "Male",
-                "emotion": "fire",
-                "mood": "cold",
-                "url" : "asdf123"
-            },
-
-            "perfume111": {
-                "age": 25,
-                "gender": "Male",
-                "emotion": "fire",
-                "mood": "cold",
-                "url" : "asdf123"
-            },
-
-            "perfume2": {
-                "age": 22,
-                "gender":  "Female",
-                "emotion": "happy",
-                "mood": "warm",
-                "url" : "asdf123"
-                        },
-
-            "perfume3": {
-                "age": 23,
-                "gender": "Male",
-                "emotion": "sad",
-                "mood": "cute",
-                "url" : "asdf123"
-                        },
-
-            "perfume4": {
-                "age": 24,
-                "gender": "Female",
-                "emotion":"angry",
-                "mood": "powerful",
-                "url" : "asdf123"
-                        },
-
-            "perfume666666": {
-                "age": 18,
-                "gender": "female",
-                "emotion":"smile",
-                "mood": "귀여운",
-                "url" : "www.naver.com",
-                "content" : "test"
-                        }
-        }
-
-        json_file_path = json_data
         print("555\n")
 
         # with open(json_file_path, 'r') as file:
@@ -121,7 +64,7 @@ def receive_info():
         #일치하는 향수들을 저장
         matching_info = []
 
-        keys = ["age", "gender", "emotion", "mood"]
+        keys = ["age", "gender", "mood"]
 
         for perfume, attributes in json_data.items():
             for key in keys:
@@ -136,7 +79,10 @@ def receive_info():
 
         # 맞는 향수가 없는 경우
         if len(matching_info) < 1:
-            return "향수라는 틀에 가둘 수 없는 너란 사람. 아주 특별해"
+            return jsonify({
+                'name' : "",
+                'content' : "향수라는 틀에 가둘 수 없는 너란 사람. 아주 특별해",
+                'url' : ""})
         print("777\n")
 
         # 선택된 향수들 중 하나를 랜덤으로 선택하고 반환
@@ -146,14 +92,20 @@ def receive_info():
         print("888\n")
         print(json_data[thisIsForYou])
         #이 지점에 향수 정보를 가져오는 코드를 추가하면 어떨까
-        return jsonify({
-            'perfume' : {
+
+        print(jsonify({
             'name' : thisIsForYou,
             'content' : json_data[thisIsForYou]["content"],
-            'url' : json_data[thisIsForYou]["url"]}})
+            'url' : json_data[thisIsForYou]["url"]}))
+
+        return jsonify({
+            'name' : thisIsForYou,
+            'content' : json_data[thisIsForYou]["content"],
+            'url' : json_data[thisIsForYou]["url"]})
 
     # 향수를 찾을 수 없는 경우
     except Exception as e:
+        print(e)
         return str(e)
 
 

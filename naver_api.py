@@ -47,21 +47,24 @@ def get_faceinfo_from_api(image):
 
         data = response.json()  # JSON 데이터를 파이썬 객체로 로드합니다.
         #print("api 777")
-        gender = data["faces"][0]["gender"]["value"]
-        age = data["faces"][0]["age"]["value"]
-        emotion = data["faces"][0]["emotion"]["value"]
+        
+        # face 정보가 넘어오지 않았을 경우 예외 처리
+        if len(data["faces"]) > 0:
+            gender = data["faces"][0]["gender"]["value"]
+            age = data["faces"][0]["age"]["value"]
+            emotion = data["faces"][0]["emotion"]["value"]
 
-        age_range = age.split("~")
+            age_range = age.split("~")
 
-        #print("api 888")
-        # 평균 계산
-        age = int((int(age_range[0]) + int(age_range[1])) / 2)
+            #print("api 888")
+            # 평균 계산
+            age = int((int(age_range[0]) + int(age_range[1])) / 2)
 
-        print(gender, age, emotion)
+            print(gender, age, emotion)
 
-        face_info["gender"] = gender
-        face_info["age"] = age
-        face_info["emotion"] = emotion
+            face_info["gender"] = gender
+            face_info["age"] = age
+            face_info["emotion"] = emotion
         #print("api 999")
 
     else:
