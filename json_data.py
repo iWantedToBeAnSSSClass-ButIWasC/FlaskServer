@@ -1,7 +1,7 @@
 json_data = {
     "존바바토스 아티산": {
         "age" : [20, 30],
-        "gender" : "Male",
+        "gender" : ["male"],
         "mood" : "차가운",
         "price" : "35000",
         "content" : "",
@@ -9,7 +9,7 @@ json_data = {
     },
     "케네스콜 블루 오 드 뚜왈렛": {
         "age" : [20, 30],
-        "gender" : "Male",
+        "gender" : "male",
         "mood" : "차가운",
         "price" : "53800",
         "content" : "빙하속에 묻힌 파인애플을 먹는 것 같은 차갑고 시크한 느낌의 캐쥬얼향수",
@@ -17,7 +17,7 @@ json_data = {
     },
     "엘리자베스 앤 제임스 너바나 프렌치 그레이 오 드 퍼퓸": {
         "age" : [20, 30],
-        "gender" : {"Male", "Female"},
+        "gender" : ["male", "female"],
         "mood" : "차가운",
         "price" : "98000",
         "content" : "비맞은 라벤더 향이 나는 것 같은 시크한 표정의 뉴요커",
@@ -25,7 +25,7 @@ json_data = {
     },
     "발렌시아가 플로라 보타니카 오 드 퍼퓸": {
         "age" : [20, 30],
-        "gender" : "Female",
+        "gender" : ["female"],
         "mood" : "차가운",
         "price" : "78000",
         "content" : "서늘함을 품고 나타난 로즈와 카네이션의 시크한 여성스러움",
@@ -33,15 +33,15 @@ json_data = {
     },
     "바이레도 발다프리크 오 드 퍼퓸": {
         "age" : [20, 30],
-        "gender" : {"Male", "Female"},
+        "gender" : ["male", "female"],
         "mood" : "따뜻한",
         "price" : "213000",
         "content" : "늦가을, 커피잔 같은 따뜻한 달콤함",
         "url" : "https://perfumegraphy.com/web/product/medium/202211/108f074bba7b7acf6e239aba7f094425.jpg"
     },
     "입생로랑 리브르 오 드 퍼퓸": {
-        "age" : 30,
-        "gender" : "Female",
+        "age" : [20, 30],
+        "gender" : ["female"],
         "mood" : "따뜻한",
         "price": "120000",
         "content": "따뜻한 라벤더의 포근함 속, 힘있게 남는 오렌지블라썸 커리어우먼",
@@ -49,15 +49,15 @@ json_data = {
     },
     "미한 아로마틱 미카도 바크 퍼퓸": {
         "age" : [20, 30],
-        "gender" : {"Male", "Female"} ,
+        "gender" : ["male", "female"],
         "mood" : "따뜻한",
         "price" : "130000",
         "content" : "가을 햇살에 데워진 우유를 머금은 듯 마음을 녹이는 따뜻한 우디향기",
         "url" : "https://perfumegraphy.com/web/product/medium/202310/1ae054bac4c47344a4ddece93e0f7161.jpg"
     },
     "플로리스 런던 상탈 오 드 뚜왈렛": {
-        "age" : 30,
-        "gender" : "Male",
+        "age" : [20, 30],
+        "gender" : ["male"],
         "mood" : "따뜻한",
         "price" : "155000",
         "content" : "이지적이면서도 듬직한 남성처럼, 따뜻한 샌달우드 위에 부드럽게 얹힌 라벤더 스킨 향기",
@@ -65,7 +65,7 @@ json_data = {
     },
     "조마드 블루밍 나잇 옴므 오 드 퍼퓸": {
         "age": [20, 30],
-        "gender": "Male",
+        "gender": ["male"],
         "mood" : "매력적인",
         "price" : "39560",
         "content" : "포근하게 안기고 싶은 남성의 이미지를 떠오르게 하는 부드러운 향",
@@ -73,7 +73,7 @@ json_data = {
     },
     "피오라 러브포이즌 포맨": {
         "age" : [20, 30],
-        "gender" : "Male",
+        "gender" : ["male"],
         "mood" : "매력적인",
         "price" : "47020",
         "content" : "시원하고 신선한 시트러스 계열의 향위에 유혹적인 향을 터치한 향수",
@@ -81,7 +81,7 @@ json_data = {
     },
     "페르비 오 드 퍼퓸": {
         "age" : [30, 40],
-        "gender" : "Female",
+        "gender" : ["female"],
         "mood" : "매력적인",
         "price" : "45000",
         "content" : "남성미 넘치는 머스크향 & 자몽과 같은 프루츠계열의 향이 부담스럽지 않으며, 풍부하고 지속적인 향이 더욱 남자다움을 강조합니다.",
@@ -89,7 +89,7 @@ json_data = {
     },
     "카사노바 페로몬": {
         "age" : [30, 40],
-        "gender" : "Female",
+        "gender" : ["female"],
         "mood" : "매력적인",
         "price" : "45000",
         "content" : "신선한 프레쉬 프로랄향과 이성을 매혹시키는 중후한 무스크향이 조화되어 관능미를 느끼게 하는 매혹적인 페로몬 향수로서 진취적이고 포스가 강한 느낌을 전달하는 남성의 향입니다.",
@@ -97,7 +97,7 @@ json_data = {
     },
     "라퐁프 블랙베리앤베이": {
         "age" : [20, 30],
-        "gender" : "Male",
+        "gender" : ["male"],
         "mood" : "활발한",
         "price" : "19900",
         "content" : "블렉베리 앤 베이 향 노트 - 톡 쏘는 블랙베리 향의 생기 넘치며 활발한 향수",
@@ -105,7 +105,7 @@ json_data = {
     },
     "지방시 앙상세 울트라마린": {
         "age" : [20, 30],
-        "gender" : "Male",
+        "gender" : ["male"],
         "mood" :"활발한",
         "price" : "70600",
         "content" : "삼목과 백단향이 관능적이며 민트, 워터 프루츠, 갈바넘, 카다몸, 시더향이 활동적이고 신선하게 다가옵니다.",
@@ -113,7 +113,7 @@ json_data = {
     },
     "메종 프란시스 커정 아쿠아 셀레스티아 코롱 포르테": {
         "age": [20, 30],
-        "gender" : "Female",
+        "gender" : ["female"],
         "mood" : "활발한",
         "price" : "166100",
         "content" : "남성과 여성을 위한 꽃 감귤 향기와 가볍고 바삭 바학하고 깨끗한 과일느낌의 활동적인 향수",
@@ -121,7 +121,7 @@ json_data = {
     },
     "조 말론 런던 로즈 블러쉬 코롱": {
         "age" : [20, 30, 40],
-        "gender" : "Female",
+        "gender" : ["female"],
         "mood" : "활발한",
         "price" : "106000",
         "content" : "연애 초반 상대의 눈빛과 목소리, 가벼운 스킵십 하나하나에 마음이 달아올라 수줍음이 얼굴에 만발하여 발그스레 해지는 것처럼 멜랑꼴리한 마음과 생기를 가득 머금은 여린 장미 향수",
@@ -129,7 +129,7 @@ json_data = {
     },
     "조 말론 우드 세이지 앤 씨 솔트 코롱": {
         "age" :[20, 30],
-        "gender" : "Male",
+        "gender" : ["male"],
         "mood" : "수수한",
         "price" : "157000",
         "content" : "하얗게 부서지는 파도, 소금기를 머금은 신선한 바다 공기. 험준한 절벽에서 느껴지는 투박한 자연의 향기와 세이지의 우디한 흙 내음이 어우러져 자유롭고 활기찬 에너지와 즐거움이 가득합니다.",
@@ -137,7 +137,7 @@ json_data = {
     },
     "포맨트 시그니처 퍼퓸 코튼허그": {
         "age" : [20, 30],
-        "gender" : "Male",
+        "gender" : ["male"],
         "mood" : "수수한",
         "price" : "49000",
         "content" : "안기고 싶은 포근함, 공기 중에 퍼지는 뮤게의 깨끗함과 머스크의 부드러움",
@@ -145,7 +145,7 @@ json_data = {
     },
     "아프리모 더바디": {
         "age" :[20, 30],
-        "gender" : "Female",
+        "gender" : ["female"],
         "mood" : "수수한",
         "price" : "58000",
         "content" : "사람의 체향보다 좋은 향기는 없다. 살냄새의 향기 실현",
@@ -153,7 +153,7 @@ json_data = {
     }, 
     "유즈 스테이포에버 오 드 퍼퓸 002": {
         "age" : [20, 30],
-        "gender" : "Female",
+        "gender" : ["female"],
         "mood" : "수수한",
         "price" : "39000",
         "content" : "사랑하는 이와 함께 눈을 뜬 느지막한 일요일 아침, 바스락거리는 커튼 사이로 스미는 따스한 햇살, 일렁이는 그림자. 이 행복이 영원하길 바라게 만드는 포근한 향기.",
@@ -161,7 +161,7 @@ json_data = {
     },
     "불가리 맨 인 블랙 오 드 퍼퓸": {
         "age" : [30, 40],
-        "gender" : "Male",
+        "gender" : ["male"],
         "emotion" : "neutral",
         "mood" : "강렬한",
         "price" : "139000",
@@ -170,7 +170,7 @@ json_data = {
     },
     "몽블랑 레전드 오 드 뚜왈렛": {
         "age" : [30, 40],
-        "gender" : "Male",
+        "gender" : ["male"],
         "emotion" : "neutral",
         "mood" : "강렬한",
         "price" : "90000",
@@ -179,7 +179,7 @@ json_data = {
     },
     "톰 포드 블랙 오키드 오 드 퍼퓸": {
         "age" : [30, 40],
-        "gender" : "Female",
+        "gender" : ["female"],
         "emotion" : "neutral",
         "mood" : "강렬한",
         "price" : "149800",
@@ -188,7 +188,7 @@ json_data = {
     },
     "딥디크 롬브로단로 오 드 퍼퓸": {
         "age" : [20, 30],
-        "gender" : "Female",
+        "gender" : ["female"],
         "emotion" : "neutral",
         "mood" : "강렬한",
         "price" : "269,000",
@@ -197,7 +197,7 @@ json_data = {
     },
     "아닉구딸 쁘띠쉐리 오 드 뚜왈렛" : {
         "age" : [10, 20],
-        "gender" : "Female",
+        "gender" : ["female"],
         "mood" : "귀여운",
         "price" : "110000",
         "content" : "아삭하고 싱그러운 배의 식감과 깨끗하고 청초하게 퍼지는 로즈 향기의 효과가 잘 때 뿌리고 자도 거부감 없을 정도로 투명하고 사각사각하게 퍼집니다.",
@@ -205,7 +205,7 @@ json_data = {
     },
     "아쿠아 델 엘바 빔비 EDT" : {
         "age" : [10, 20],
-        "gender" : "Female",
+        "gender" : ["female"],
         "mood" : "귀여운",
         "price" : "87200",
         "content" : "엘바 섬의 상쾌함과 특성을 상기시켜주는 플라워 노트와 과일향의 섬세한 조화",
@@ -213,7 +213,7 @@ json_data = {
     },
     "미르코부피니 키 오드퍼퓸" : {
         "age" : [20, 30],
-        "gender" : "Female",
+        "gender" : ["female"],
         "mood" : "귀여운",
         "price" : "267300",
         "content" : "편안하면서 신비롭게 탑, 미들, 베이스 노트를 보여주는데 상큼하면서 달콤함을 이어가다가 어느 순간 꽃향기와 코코넛이 부드럽게 감싸는 향입니다.",
@@ -221,7 +221,7 @@ json_data = {
     },
     "샬롱드느바에 바이올레타 오도라타" : {
         "age" : [20, 30],
-        "gender" : "Male",
+        "gender" : ["male"],
         "mood" : "귀여운",
         "price" : "167000",
         "content" : "섬세하고 자연스러운 최상의 향",
@@ -229,7 +229,7 @@ json_data = {
     },
     "이스뜨와 드 퍼퓸 1831 노르마 벨리니" : {
         "age" : [20, 30],
-        "gender" : "Male",
+        "gender" : ["male"],
         "mood" : "우아한",
         "price" : "227000",
         "content" : "장미와 자스민의 관능적인 향이 랍다넘, 파출리, 벤조과의 만남으로 더욱 여성스럽고 풍만한 흥취를 낸다.",
@@ -237,7 +237,7 @@ json_data = {
     },
     "4160튜즈데이즈 뉴욕'55 오드퍼퓸" : {
         "age" : [20, 30],
-        "gender" : "Male",
+        "gender" : ["male"],
         "mood" : "우아한",
         "price" : "165000",
         "content" : "생동감 넘치게 달달함이 인상적인 향수입니다.",
@@ -245,16 +245,16 @@ json_data = {
     },
     "아프리모 미드나잇 퍼퓸" : {
         "age" : [10, 20],
-        "gender" : "Female",
-        "mood" : "elegant",
+        "gender" : ["female"],
+        "mood" : "우아한",
         "price" : "68000",
         "content" : "아득히 깊이 있는 신비로운 여자로 만들어 줄 자정의 향기",
         "url" : "https://m.afrimo.net/web/product/big/202307/76cbb8ed19e33bc0a31d9ebb4caeece6.jpg"
     },
     "Her 런던 드림 오드퍼퓸" : {
         "age" : [20, 30],
-        "gender" : "Female",
-        "mood" : "elegant",
+        "gender" : ["female"],
+        "mood" : "우아한",
         "price" : "158000",
         "content" : "모던하고 릴랙스한 라이프 스타일이 연상되는 화사하고 매력적인 향",
         "url" : "https://assets.burberry.com/is/image/Burberryltd/4D8A84A7-078A-4F2C-B3D4-190212E8F1B9?$BBY_V3_SL_1$&wid=2500&hei=2500"
