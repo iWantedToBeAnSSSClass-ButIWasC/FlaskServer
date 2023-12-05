@@ -28,16 +28,19 @@ def receive_info():
         # 주어진 기준과 각 항목을 비교하여 일치하는지 확인
         for perfume, attributes in json_data.items():
             # 분위기를 비교하여 다르다면 pass
-            if attributes["mood"] != face_info["mood"]:
+            if face_info["mood"] != "" and attributes["mood"] != face_info["mood"]:
                 continue
 
             # 성별을 비교하여 다르다면 pass
-            if not face_info["gender"].lower() in attributes["gender"]:
+            if face_info["gender"] != "" and not face_info["gender"].lower() in attributes["gender"]:
                 continue
 
             # 나잇대에 포함된다면 append
-            if math.floor(face_info["age"] / 10) * 10 in attributes["age"]:
+            if face_info["age"] == 0:
                 matching_info.append(perfume)
+            else:
+                if math.floor(face_info["age"] / 10) * 10 in attributes["age"]:
+                    matching_info.append(perfume)
 
         # 맞는 향수가 없는 경우
         if len(matching_info) < 1:
